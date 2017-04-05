@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".normalaktivite">
+            <intent-filter>
+                <action android:name="android.intent.action.normalaktivite" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TekDokunmatikAktivite" />
+        <activity android:name=".CokluDokunmatikACtivite" />
+        <activity android:name=".TusBasmaActivite" />
+        <activity android:name=".IvmeOlcer" />
+        <activity android:name=".AssestAktivite" />
+        <activity android:name=".SDKartAktivite" />
+        <activity android:name=".SesOynatAktivite" />
+        <activity android:name=".MuzikOynatAktivite" />
+        <activity android:name=".TamEkranAktivite" />
+        <activity android:name=".YeniCizAktivite" />
+        <activity android:name=".SekilCizAktivite" />
+        <activity android:name=".ResimCizAktivite" />
+        <activity android:name=".MetinYazAktivite" />
+        <activity android:name=".SurfaceViewAktivite"></activity>
+    </application>
+
+</manifest>
