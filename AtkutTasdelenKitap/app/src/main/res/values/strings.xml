@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TabActivitySample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sekme1">Sekme1</string>
+    <string name="title_activity_sekme2">Sekme2</string>
+    <string name="title_activity_sekme3">Sekme3</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a.atkuttasdelenkitap.RadioCheckBoxGrup">
+
+    <RadioGroup
+        android:id="@+id/grp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdoTekCekim"
+            style="?android:attr/starStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text="Tek Çekim" />
+
+        <RadioButton
+            android:id="@+id/rdoTaksit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Taksitle" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/pnlTaksitSayisi"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtTaksitSayisi"
+            android:layout_width="1dip"
+            android:layout_height="50dip"
+           android:layout_gravity="left"
+            android:layout_weight="0.7"
+            android:inputType="number"
+            android:hint="Taksit Sayısı" />
+
+        <Button
+            android:id="@+id/btnTaksitlendir"
+
+            android:layout_width="1dip"
+            android:layout_height="50dip"
+            android:layout_gravity="right"
+            android:layout_weight="0.3"
+            android:onClick="btnTaksitlendirClick"
+            android:text="Takssitlendir" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/pnlTaksitler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

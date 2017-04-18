@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.a.atkuttasdelenkitap.EditText">
+
+    <EditText
+        android:id="@+id/kullaniciadi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Kullanıcı isimi"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <requestFocus/>
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_below="@+id/kullaniciadi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çıkış"
+        android:onClick="btnCancel"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="140dp"
+        android:layout_below="@+id/kullaniciadi"
+        android:layout_alignRight="@+id/kullaniciadi"
+        android:layout_alignEnd="@+id/kullaniciadi"
+        android:layout_marginTop="171dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş"
+        android:onClick="btnLogin"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="140dp"
+        android:layout_alignBaseline="@+id/cancel"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+</RelativeLayout>

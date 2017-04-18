@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context="com.example.a.atkuttasdelenkitap.GridLayoutMatris">
 
+    <GridLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:columnCount="8"
+        android:background="#FF0000"
+        tools:layout_editor_absoluteY="9dp"
+        tools:layout_editor_absoluteX="13dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:text="Button" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </GridLayout>
 </android.support.constraint.ConstraintLayout>
